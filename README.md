@@ -10,7 +10,7 @@ Steps to reproduce:
 1. Signup @ http://localhost:5000/users/sign_up
 1. Go to http://localhost:5000/
 
-Last step will ocasionally give a hs error:
+Last step will occasionally give a js error:
 
 ```
 application.js:250 Error invoking action "click->stimulus-reflex#__perform"
