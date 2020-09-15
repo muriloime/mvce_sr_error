@@ -21,4 +21,12 @@ class ExampleReflex < ApplicationReflex
   #   end
   #
   # Learn more at: https://docs.stimulusreflex.com
+
+  def add_todo
+    @todos ||= (0..element.dataset[:count].to_i).map { |x| "todo #{x}" }
+  end
+
+  def remove_todo
+    @todos ||= (0..(element.dataset[:count].to_i - 2)).map { |x| "todo #{x}" }
+  end
 end
