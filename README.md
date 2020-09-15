@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+MVCE for a bug (?!) in Stimulus reflex/action cable.
 
-Things you may want to cover:
+Steps to reproduce:
 
-* Ruby version
+1. bundle install
+1. rails db:migrate
+1. foreman start
+1. Signup @ http://localhost:5000/users/sign_up
+1. Go to http://localhost:5000/
 
-* System dependencies
+Last step will ocasionally give a hs error:
 
-* Configuration
+```
+application.js:250 Error invoking action "click->stimulus-reflex#__perform"
 
-* Database creation
+"The ActionCable connection is not open! `this.isActionCableConnectionOpen()` must return true before calling `this.stimulate()`"
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
