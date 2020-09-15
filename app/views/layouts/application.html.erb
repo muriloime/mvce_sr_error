@@ -11,6 +11,8 @@
   </head>
 
   <body>
+    <%= "logged as #{current_user.id}" if current_user%>
+    <%= "unlogged" if !current_user%>
     <%= yield %>
   </body>
 </html>
