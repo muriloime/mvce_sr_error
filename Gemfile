@@ -54,3 +54,5 @@ end
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 gem 'stimulus_reflex', '~> 3.3.0-pre4'
+
+gem "devise", "~> 4.7"
